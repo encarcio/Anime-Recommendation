@@ -9,8 +9,7 @@ import org.springframework.stereotype.*;
 @SpringBootApplication
 public class DemoApplication {
 
-    @RequestMapping("/hello")
-    @ResponseBody
+    @RequestMapping("/")
     public String home() {
       return "index";
     }

@@ -1,11 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Anime Suggestion</title>
+    <style>
+        @font-face {
+            font-family: animeFont1;
+            src: url(NinjaNaruto-YOn4.ttf);
+        }
+
+        @font-face {
+            font-family: animeFont2;
+            src: url(OnePiece-zAqL.ttf);
+        }
+
+        @font-face {
+            font-family: animeFont3;
+            src: url(Bleach-8jnJ.ttf)
+        }
+
+        @font-face {
+            font-family: animeFont4;
+            src: url(animeace_i.ttf);
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .nav-link {
+            color: white;
+            padding: 2px;
+        }
+
+        .nav-link:hover {
+            color: orangered;
+        }
+
+        .nav {
+            background-color: transparent;
+        }
+
+        body {
+            background-image: url("42079.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            transition: background-image 2s;
+            -moz-transition: background-image 2s;
+            -webkit-transition: background-image 2s;
+            -o-transition: background-image 2s;
+
+        }
+
+        .card-img-top {
+            width: 350px;
+            height: 515px;
+            object-fit: cover;
+        }
+
+        .input-group {
+            font-family: animeFont4;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #rcorners3 {
+            border-radius: 15px 50px;
+            background: #73AD21;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            padding: 2px;
+        }
+
+        .show {
+            opacity: 1;
+            transition: opacity 1000ms;
+        }
+
+        .hide {
+            opacity: 0;
+            transition: opacity 1000ms;
+        }
+
+        #nav2 {
+            margin-top: 20px;
+            padding-top: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #div1 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: larger;
+            margin-top: 60px;
+            padding: 100px;
+        }
+
+        h2 {
+            font-family: animeFont4;
+        }
+        #anime_body{
+            text-align: center;
+            padding:6px;
+        }
+        h3{
+            text-transform: capitalize;
+            margin-top: 6px;
+            margin-bottom:0px ;
+        }
+
+        .form {
+            margin-top: 20px;
+            width: 100%;
+            font-weight: bolder;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>HELLO WOLRD!</h1>
+    <nav class="navbar navbar-expand-sm" id="nav1">
+        <a class="navbar-brand" href="index.html">
+            <img src="site-logo.png" alt="site_logo" srcset="" style="width: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-family:animeFont1; font-size:1.25rem;  letter-spacing: 3px;"
+                        href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-family:animeFont1; font-size:1.25rem; ; letter-spacing: 3px;"
+                        href="newToAnime.html">NEW TO ANIME</a>
+                </li>
+               <!-- <li class="nav-item">
+                    <a class="nav-link " style=" font-family:animeFont1; font-size:1.25rem; ;letter-spacing: 3px;"
+                        href="#">ABOUT</a>
+                </li>-->
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark hide" id="nav2">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form id="anime_form">
+                <div class="form-inline ml-4">
+                    <div class="col col-md-auto ml-4 mr-4">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Genre</label>
+                            </div>
+                            <select class="form-control" id="inputGroupSelect01" required>
+                                <option value="">Choose</option>
+                                <option value="Shounen">Shounen</option>
+                                <option value="Action">Action</option>
+                                <option value="Harem">Harem</option>
+                                <option value="Thriller">Thriller</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-md-auto ml-4 mr-4">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Experience</label>
+                            </div>
+                            <select class="form-control" id="inputGroupSelect02" required>
+                                <option value="">Choose</option>
+                                <option value="1">1 year</option>
+                                <option value="2">2 year</option>
+                                <option value="3">3 year</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-md-auto ml-4 mr-4">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Sub-Genre</label>
+                            </div>
+                            <select class="form-control" id="inputGroupSelect03" required>
+                                <option value="">Choose</option>
+                                <option value="Mainstream">Mainstream</option>
+                                <option value="Unorthodox">Unorthodox</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col col-md-auto ml-2">
+                        <button type="button" class="btn btn-danger btn-md"
+                            style="font-weight:bold; font-family: cursive;" onclick="animeList()"><i
+                                class="fa fa-search"></i> SEARCH</button>
+                    </div>
+                    <div class="col col-md-auto ml-2">
+                        <button type="button" class="btn btn-danger btn-md" data-toggle="modal"
+                            data-target="#exampleModalCenter" style="font-weight:bold; font-family: cursive;"
+                            onclick="random()"><i class="fa fa-dice"></i> RANDOM ANIME
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </nav>
+    <div class="container" id="div1">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-primary">RANDOM ANIME</h2>
+                <p class="text-light" style="font-weight:600;">Smash that generate random list button and let fate
+                    decide what show you are going
+                    to watch. If you don’t adjust any settings on the form, a random list of all the anime stored on the
+                    site will be built. This is perfect if you want to branch out to different kind of anime.</p>
+                <button type="button" class="btn btn-success btn-block" data-toggle="modal"
+                    data-target="#exampleModalCenter" onclick="random()"
+                    style="font-family: cursive; font-weight: bold;">LEAVE IT TO FATE !</button>
+            </div>
+            <div class="col">
+                <h2 class="text-primary">RANDOM LIST</h2>
+                <p class="text-light" style="font-weight:600;">You know what you like, and want to find a show that fits
+                    your taste. Use the
+                    dropdowns to include or exclude genres based on your preference. You can also click the advanced
+                    form option to gain more control. The result is a bunch of new anime that you know you are going to
+                    enjoy.</p>
+                <button type="button" class="btn btn-success btn-block" onclick="fadeOutEffect()"
+                    style="font-family: cursive; font-weight: bold;">DECIDE YOUR DESTINY !</button>
+            </div>
+        </div>
+    </div>
+    <div id="card_slider" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" id="carousel_inner_item">
+        </div>
+    </div>
+    <a class="carousel-control-prev hide" href="#card_slider" role="button" data-slide="prev" id="btn1"
+        style="margin-top: 200px; margin-bottom: 200px;">
+        <span class="fas fa-angle-left  text-primary" style="font-size: 4rem;font-weight: bold;"></span>
+    </a>
+    <a class="carousel-control-next hide" href="#card_slider" role="button" data-slide="next" id="btn2"
+        style="margin-top: 200px; margin-bottom: 200px;">
+        <span class="fas fa-angle-right text-primary" style="font-size: 4rem;font-weight: bold;"></span>
+    </a>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" style="padding:120px;" aria-hidden="true">
+
+        <div class="col-12" style="margin-left: 50px;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" style="width: 350px;
+            height: 515px;">
+                    <div class="card shadow p-0" id="card_img">
+                        <img id="modal_img" src="" alt="anime_img" style="width: 345px;
+                        height: 515px;">
+                        <div class="card-body" id="anime_body">
+                            <h3 class="card-title text-dark" id="anime_name"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
 </body>
+<script>
+    window.onload = function () {
+        function changeImage() {
+            var BackgroundImg = ["36630.jpg", "42079.jpg", "808516.jpg", "842599.jpg"];
+            var i = Math.floor((Math.random() * 4));
+            document.body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
+        }
+        window.setInterval(changeImage, 5000);
+    }
+    function fadeOutEffect() {
+        document.getElementById("div1").classList.add('hide');
+        document.getElementById("div1").style.display = "none";
+        fadeInEffect();
+    }
+    function fadeInEffect() {
+        document.getElementById("nav2").classList.remove('hide');
+        document.getElementById('nav2').classList.add('show');
+    }
+    function random() {
+        var data = "qwert";
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                let response = this.responseText;
+                let anime = JSON.parse(response);
+                for (index in anime) {
+                    console.log(anime[index]);
+                    document.getElementById('modal_img').src = '' + anime[index];
+                    document.getElementById('anime_name').innerHTML=index;
+                }
+
+            }
+        });
+        xhr.open("POST", "http://localhost:8080/send/random");
+        xhr.withCredentials = false;
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(data);
+    }
+    function animeList() {
+        document.getElementById('btn1').classList.remove('hide');
+        document.getElementById('btn2').classList.remove('hide');
+        var gen = document.getElementById("inputGroupSelect01");
+        var genre = gen.options[gen.selectedIndex].value;
+        var exp = document.getElementById("inputGroupSelect02");
+        var experience = exp.options[exp.selectedIndex].value;
+        var subgen = document.getElementById("inputGroupSelect03");
+        var subGenre = subgen.options[subgen.selectedIndex].value;
+        var cardList = [];
+        console.log(genre + " " + experience + " " + subGenre);                       /*For testing whether data is being selected from page or not*/
+        var data = JSON.stringify({ "genre": genre, "exp": experience, "stream": subGenre });
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                let response = this.responseText;
+                let anime = JSON.parse(response);
+                Object.keys(anime).forEach(function (key) {
+                    console.log(key + " : " + anime[key]);
+                    var content =
+                        `<div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src=${anime[key]}
+                                    alt="anime_img">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-dark">${key}</h3>
+                                    </div>
+                            </div>
+                        </div>
+                        `;
+                    cardList.push(content);
+                });
+                console.log(cardList);
+                var j = 1;
+                var i = 0;
+                var flag = true;
+                var carousel = document.getElementById('carousel_inner_item');
+                carousel.innerHTML = '';
+                while (i < cardList.length) {
+                    k = 0;
+                    var innerItem = document.createElement('div');
+                    innerItem.classList.add('carousel-item');
+                    if (j == 1) {
+                        innerItem.classList.add('active');
+                    }
+                    var container = document.createElement('div');
+                    container.classList.add('container');
+                    container.id = j;
+                    container.style.marginTop = '40px';
+                    container.style.padding = '0px';
+                    container.style.textAlign = 'center';
+                    carousel.appendChild(innerItem);
+                    innerItem.appendChild(container);
+                    var slide = document.createElement('div');
+                    slide.classList.add('row');
+                    while (k < 3) {
+                        if (cardList[i] === undefined) {
+                            break;
+                        }
+                        slide.innerHTML += cardList[i];
+                        i++;
+                        k++;
+                    }
+                    document.getElementById(j).appendChild(slide);
+                    j++;
+                }
+
+            }
+        });
+        xhr.open("POST", "http://localhost:8080/send");
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(data);
+    }
+</script>
+
 </html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>New To Anime</title>
+    <style>
+        @font-face {
+            font-family: animeFont1;
+            src: url(NinjaNaruto-YOn4.ttf);
+        }
+
+        @font-face {
+            font-family: animeFont2;
+            src: url(OnePiece-zAqL.ttf);
+        }
+
+        @font-face {
+            font-family: animeFont3;
+            src: url(Bleach-8jnJ.ttf)
+        }
+
+        @font-face {
+            font-family: animeFont4;
+            src: url(animeace_i.ttf);
+        }
+
+        body,
+        html {
+            height: 100%;
+        }
+
+        .nav-link {
+            color: white;
+            padding: 2px;
+        }
+
+        .nav-link:hover {
+            color: orangered;
+        }
+
+        .nav {
+            background-color: transparent;
+        }
+
+        body {
+            background-image: url("42079.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            transition: background-image 2s;
+            -moz-transition: background-image 2s;
+            -webkit-transition: background-image 2s;
+            -o-transition: background-image 2s;
+
+        }
+
+        .card-img-top {
+            width: 350px;
+            height: 515px;
+            object-fit: cover;
+        }
+
+        .input-group {
+            font-family: animeFont4;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #rcorners3 {
+            border-radius: 15px 50px;
+            background: #73AD21;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            padding: 2px;
+        }
+
+        .show {
+            opacity: 1;
+            transition: opacity 1000ms;
+        }
+
+        .hide {
+            opacity: 0;
+            transition: opacity 1000ms;
+        }
+
+        #nav2 {
+            margin-top: 20px;
+            padding-top: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        #div1 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-size: larger;
+            margin-top: 60px;
+            padding: 100px;
+        }
+
+        h2 {
+            font-family: animeFont4;
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 6px;
+        }
+
+        h3 {
+            text-transform: capitalize;
+            margin-top: 6px;
+            margin-bottom: 0px;
+        }
+
+        .form {
+            margin-top: 20px;
+            width: 100%;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm" id="nav1">
+        <a class="navbar-brand" href="index.html">
+            <img src="site-logo.png" alt="site_logo" srcset="" style="width: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" style="font-family:animeFont1; font-size:1.25rem;  letter-spacing: 3px;"
+                        href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " style="font-family:animeFont1; font-size:1.25rem; ; letter-spacing: 3px;"
+                        href="newToAnime.html">NEW TO ANIME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style=" font-family:animeFont1; font-size:1.25rem; ;letter-spacing: 3px;"
+                        href="#">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  <!--  <div class="container" id="div1">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-primary">RANDOM ANIME</h2>
+                <p class="text-light" style="font-weight:600;">Smash that generate random list button and let fate
+                    decide what show you are going
+                    to watch. If you don’t adjust any settings on the form, a random list of all the anime stored on the
+                    site will be built. This is perfect if you want to branch out to different kind of anime.</p>
+                <button type="button" class="btn btn-success btn-block" data-toggle="modal"
+                    data-target="#exampleModalCenter" onclick="random()"
+                    style="font-family: cursive; font-weight: bold;">LEAVE IT TO FATE !</button>
+            </div>
+            <div class="col">
+                <h2 class="text-primary">RANDOM LIST</h2>
+                <p class="text-light" style="font-weight:600;">You know what you like, and want to find a show that fits
+                    your taste. Use the
+                    dropdowns to include or exclude genres based on your preference. You can also click the advanced
+                    form option to gain more control. The result is a bunch of new anime that you know you are going to
+                    enjoy.</p>
+                <button type="button" class="btn btn-success btn-block" onclick="fadeOutEffect()"
+                    style="font-family: cursive; font-weight: bold;">DECIDE YOUR DESTINY !</button>
+            </div>
+        </div>
+    </div>-->
+
+    <div id="card_slider" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner" id="carousel_inner_item">
+            <div class="carousel-item active">
+                <div class="container" style="margin-top: 40px; padding: 0px; text-align: center;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top" src="https://pbs.twimg.com/media/Dsg6KKOUUAYOPVR.jpg:large"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">1. Promised Neverland</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://miro.medium.com/max/2834/1*bjJdW5O3JEIKIVJFvDlHZg.jpeg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">2. Your Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTItMDI5MS00MGU4LWI1NWQtOTg5ZThhNGQwYTEzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">3. Full Metal Alchemist</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item a">
+                <div class="container" style="margin-top: 40px; padding: 0px; text-align: center;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top" src="https://i.imgur.com/GZtQoLo.jpg" alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">4. Princess Mononoke</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://cdn.gbposters.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/d/e/deathnote-duo-maxi-poster-1.16.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">5. Death Note</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://cdn11.bigcommerce.com/s-zibil8w/images/stencil/2048x2048/products/30270/35316/Booster__07264.1529162304.jpg?c=2"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">6. No Game No Life</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item a">
+                <div class="container" style="margin-top: 40px; padding: 0px; text-align: center;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3196/31963318_so.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">7. Code Geass</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://images-na.ssl-images-amazon.com/images/I/71VjwmyvbpL._SL1500_.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">8. Haikyuu</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/M/MV5BZGRkOGMxYTUtZTBhYS00NzI3LWEzMDQtOWRhMmNjNjJjMzM4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">9. A Silent Voice</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item a">
+                <div class="container" style="margin-top: 40px; padding: 0px; text-align: center;">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top" src="https://pbs.twimg.com/media/EQHIB0dXYAACDmT.jpg:large"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">10. Demon Slayer</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top" src="https://i.redd.it/lf3zl98yy7011.jpg" alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">11. Grand Blue</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://acanimelife.files.wordpress.com/2016/03/tumblr_o1p9nbdgwc1qla2gio1_1280.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">12. Erased</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item a">
+                <div class="container" style="margin-top: 40px; padding: 0px; text-align: center;">
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://m.media-amazon.com/images/M/MV5BZmY2NjUzNDQtNTgxNC00M2Q4LTljOWQtMjNjNDBjNWUxNmJlXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">13. Grave of Fireflies</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://funart.pro/uploads/posts/2019-09/1569097637_moja-gerojskaja-akademija-3-anime-26.jpg"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">14. My Hero Academia</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card shadow p-1 ">
+                                <img class="card-img-top"
+                                    src="https://i0.wp.com/masteryee.org/wp-content/uploads/2015-fantastic-anime-OVERLORD.png?fit=1560%2C2160&ssl=1"
+                                    alt="anime_img">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">15. Overlord</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev hide" href="#card_slider" role="button" data-slide="prev" id="btn1"
+        style="margin-top: 200px; margin-bottom: 200px;">
+        <span class="fas fa-angle-left  text-primary" style="font-size: 4rem;font-weight: bold;"></span>
+    </a>
+    <a class="carousel-control-next hide" href="#card_slider" role="button" data-slide="next" id="btn2"
+        style="margin-top: 200px; margin-bottom: 200px;">
+        <span class="fas fa-angle-right text-primary" style="font-size: 4rem;font-weight: bold;"></span>
+    </a>
+
+    <script>
+        window.onload = function () {
+            function fadeOutEffect() {
+                var div =document.getElementById('div1');
+                var i = Math.floor((Math.random() * 4));
+                document.body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
+            }
+            window.setInterval(changeImage, 5000);
+        }
+    </script>
+</body>
+
+</html>

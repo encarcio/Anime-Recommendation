@@ -8,7 +8,9 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
-
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 public class randomizer {
     Map<String, String> outrand = new HashMap<String, String>();
 
@@ -24,13 +26,22 @@ public class randomizer {
         this.outrand = outrand;
     }
 
+    private static Connection getConnection() throws URISyntaxException, SQLException {
+        URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+        String username = dbUri.getUserInfo().split(":")[0];
+        String password = dbUri.getUserInfo().split(":")[1];
+        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath()
+                + "?sslmode=require";
+
+        return DriverManager.getConnection(dbUrl, username, password);
+    }
+
     public void jdbc() {
         String str = "select * from anime where code=?";
         int id = ThreadLocalRandom.current().nextInt(100, 119 + 1);
 
-        try (Connection conn = DriverManager.getConnection(
-            "jdbc:postgresql://localhost:5432/postgres",
-            "postgres", "xxxx");
+        try (Connection conn = getConnection();
 
                 Statement stmt = conn.createStatement();) {
 

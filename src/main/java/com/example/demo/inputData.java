@@ -4,7 +4,9 @@ import java.sql.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 import org.springframework.stereotype.Service;
 
 
@@ -55,7 +57,16 @@ public String getGenre() {
 		System.out.println("DATA IN THE INPUT DATA CLASS IS "+this.stream );
 		putinfo();
 	}
+	private static Connection getConnection() throws URISyntaxException, SQLException {
+        URI dbUri = new URI(System.getenv("DATABASE_URL"));
 
+        String username = dbUri.getUserInfo().split(":")[0];
+        String password = dbUri.getUserInfo().split(":")[1];
+        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath()
+                + "?sslmode=require";
+
+        return DriverManager.getConnection(dbUrl, username, password);
+    }
 
 public void putinfo()
 {  
@@ -68,9 +79,7 @@ public void putinfo()
 	String str="select * from anime where genre LIKE ? and exp=? and stream LIKE ?";
 	
 	 try (
-             Connection conn = DriverManager.getConnection(
-				"jdbc:postgresql://localhost:5432/postgres",
-				"postgres", "xxxx");
+             Connection conn = getConnection();
              
                Statement stmt = conn.createStatement();
              ){

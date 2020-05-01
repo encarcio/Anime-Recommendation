@@ -1,0 +1,122 @@
+@font-face {
+    font-family: animeFont1;
+    src: url(NinjaNaruto-YOn4.ttf);
+}
+
+@font-face {
+    font-family: animeFont2;
+    src: url(OnePiece-zAqL.ttf);
+}
+
+@font-face {
+    font-family: animeFont3;
+    src: url(Bleach-8jnJ.ttf)
+}
+
+@font-face {
+    font-family: animeFont4;
+    src: url(animeace_i.ttf);
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.nav-link {
+    color: white;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    color: orangered;
+}
+
+.nav {
+    background-color: transparent;
+}
+
+body {
+    background-image: url("42079.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    transition: background-image 2s;
+    -moz-transition: background-image 2s;
+    -webkit-transition: background-image 2s;
+    -o-transition: background-image 2s;
+
+}
+
+.card-img-top {
+    width: 350px;
+    height: 515px;
+    object-fit: cover;
+}
+
+.input-group {
+    font-family: animeFont4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#rcorners3 {
+    border-radius: 15px 50px;
+    background: #73AD21;
+    padding: 10px;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    padding: 2px;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
+
+#nav2 {
+    margin-top: 20px;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#div1 {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: larger;
+    margin-top: 60px;
+    padding: 100px;
+}
+
+h2 {
+    font-family: animeFont4;
+}
+
+.card-body {
+    text-align: center;
+    padding: 6px;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.form {
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bolder;
+}

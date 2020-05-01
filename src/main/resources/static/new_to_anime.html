@@ -17,131 +17,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="new_to_anime.css">
+    <script src="new_to_anime.js"></script>
     <title>New To Anime</title>
-    <style>
-        @font-face {
-            font-family: animeFont1;
-            src: url(NinjaNaruto-YOn4.ttf);
-        }
-
-        @font-face {
-            font-family: animeFont2;
-            src: url(OnePiece-zAqL.ttf);
-        }
-
-        @font-face {
-            font-family: animeFont3;
-            src: url(Bleach-8jnJ.ttf)
-        }
-
-        @font-face {
-            font-family: animeFont4;
-            src: url(animeace_i.ttf);
-        }
-
-        body,
-        html {
-            height: 100%;
-        }
-
-        .nav-link {
-            color: white;
-            padding: 2px;
-        }
-
-        .nav-link:hover {
-            color: orangered;
-        }
-
-        .nav {
-            background-color: transparent;
-        }
-
-        body {
-            background-image: url("42079.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100%;
-            transition: background-image 2s;
-            -moz-transition: background-image 2s;
-            -webkit-transition: background-image 2s;
-            -o-transition: background-image 2s;
-
-        }
-
-        .card-img-top {
-            width: 350px;
-            height: 515px;
-            object-fit: cover;
-        }
-
-        .input-group {
-            font-family: animeFont4;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        #rcorners3 {
-            border-radius: 15px 50px;
-            background: #73AD21;
-            padding: 10px;
-            margin: 20px;
-        }
-
-        .navbar {
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        .navbar-brand {
-            padding: 2px;
-        }
-
-        .show {
-            opacity: 1;
-            transition: opacity 1000ms;
-        }
-
-        .hide {
-            opacity: 0;
-            transition: opacity 1000ms;
-        }
-
-        #nav2 {
-            margin-top: 20px;
-            padding-top: 5px;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-
-        #div1 {
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.5);
-            font-size: larger;
-            margin-top: 60px;
-            padding: 100px;
-        }
-
-        h2 {
-            font-family: animeFont4;
-        }
-
-        .card-body {
-            text-align: center;
-            padding: 6px;
-        }
-
-        h3 {
-            text-transform: capitalize;
-            margin-top: 6px;
-            margin-bottom: 0px;
-        }
-
-        .form {
-            margin-top: 20px;
-            width: 100%;
-            font-weight: bolder;
-        }
-    </style>
 </head>
 
 <body>
@@ -170,30 +48,6 @@
             </ul>
         </div>
     </nav>
-  <!--  <div class="container" id="div1">
-        <div class="row">
-            <div class="col">
-                <h2 class="text-primary">RANDOM ANIME</h2>
-                <p class="text-light" style="font-weight:600;">Smash that generate random list button and let fate
-                    decide what show you are going
-                    to watch. If you don’t adjust any settings on the form, a random list of all the anime stored on the
-                    site will be built. This is perfect if you want to branch out to different kind of anime.</p>
-                <button type="button" class="btn btn-success btn-block" data-toggle="modal"
-                    data-target="#exampleModalCenter" onclick="random()"
-                    style="font-family: cursive; font-weight: bold;">LEAVE IT TO FATE !</button>
-            </div>
-            <div class="col">
-                <h2 class="text-primary">RANDOM LIST</h2>
-                <p class="text-light" style="font-weight:600;">You know what you like, and want to find a show that fits
-                    your taste. Use the
-                    dropdowns to include or exclude genres based on your preference. You can also click the advanced
-                    form option to gain more control. The result is a bunch of new anime that you know you are going to
-                    enjoy.</p>
-                <button type="button" class="btn btn-success btn-block" onclick="fadeOutEffect()"
-                    style="font-family: cursive; font-weight: bold;">DECIDE YOUR DESTINY !</button>
-            </div>
-        </div>
-    </div>-->
 
     <div id="card_slider" class="carousel slide" data-ride="carousel" data-interval="false">
         <div class="carousel-inner" id="carousel_inner_item">
@@ -387,7 +241,7 @@
     <script>
         window.onload = function () {
             function fadeOutEffect() {
-                var div =document.getElementById('div1');
+                var div = document.getElementById('div1');
                 var i = Math.floor((Math.random() * 4));
                 document.body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
             }

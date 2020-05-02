@@ -39,7 +39,7 @@ public class randomizer {
 
     public void jdbc() {
         String str = "select * from anime where code=?";
-        int id = ThreadLocalRandom.current().nextInt(100, 136 + 1);
+        int id = ThreadLocalRandom.current().nextInt(100, 154 + 1);
 
         try (Connection conn = getConnection();
 

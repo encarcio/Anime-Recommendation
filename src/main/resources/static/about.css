@@ -33,7 +33,7 @@
 }
 
 body {
-    background-image: url("42079.jpg");
+    background-image: url("about_background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,15 +89,16 @@ body {
 }
 
 #div1 {
-    text-align: center;
+    text-align:center;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: larger;
     margin-top: 60px;
-    padding: 100px;
+    padding: 40px;
 }
 
 h2 {
-    font-family: animeFont4;
+    font-family:cursive;
+    font-weight: bold;
 }
 .card-body{
     text-align: center;

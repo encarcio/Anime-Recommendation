@@ -18,7 +18,9 @@
     src: url(animeace_i.ttf);
 }
 
-
+html{
+  height: 100%;
+}
 .nav-link {
     color: white;
     padding: 2px;

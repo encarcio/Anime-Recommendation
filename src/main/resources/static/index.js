@@ -63,7 +63,7 @@ function animeList() {
                                 src=${anime[key]}
                                 alt="anime_img">
                                 <div class="card-body">
-                                    <h4 class="card-title text-dark">${key}</h4>
+                                    <h6 class="card-title text-dark">${key}</h6>
                                 </div>
                         </div>
                     </div>

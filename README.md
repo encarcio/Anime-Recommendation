@@ -5,3 +5,6 @@ A website designed for recommending anime to those who have who are new to anime
 <img src="https://imgur.com/WZ7HU1S.png" alt="anime_img">
 <br>
 <br>
+<img src="https://imgur.com/nyUXv2I.png" alt="anime_img">
+<br>
+<br>

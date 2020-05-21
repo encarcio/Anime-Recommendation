@@ -119,20 +119,11 @@ function animeList() {
  *
  *
  */
-function getMobileOperatingSystem() {
+window.onload=function getMobileOperatingSystem() {
     var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-  
-    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+    
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ||  userAgent.match( /Android/i ) )
     {
-      window.alert("ios");
-    }
-    else if( userAgent.match( /Android/i ) )
-    {
-  
-      window.alert("Android");
-    }
-    else
-    {
-      window.alert('unknown');
+        window.location.href="not_available.html"
     }
   }

@@ -124,15 +124,15 @@ function getMobileOperatingSystem() {
   
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
     {
-      console.log("iOS") ;
+      window.alert("ios");
     }
     else if( userAgent.match( /Android/i ) )
     {
   
-      console.log("Android");
+      window.alert("Android");
     }
     else
     {
-      console.log( 'unknown');
+      window.alert('unknown');
     }
   }

@@ -1,3 +1,17 @@
+/**
+ * Determine the mobile operating system.
+ * This function either returns 'iOS', 'Android' or 'unknown'
+ *
+ *
+ */
+window.onload=function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ||  userAgent.match( /Android/i ) )
+    {
+        window.location.href="not_available.html"
+    }
+  }
 window.onload = function () {
     this.getMobileOperatingSystem();
     function changeImage() {
@@ -113,17 +127,3 @@ function animeList() {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
 }
-/**
- * Determine the mobile operating system.
- * This function either returns 'iOS', 'Android' or 'unknown'
- *
- *
- */
-window.onload=function getMobileOperatingSystem() {
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    
-    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ||  userAgent.match( /Android/i ) )
-    {
-        window.location.href="not_available.html"
-    }
-  }

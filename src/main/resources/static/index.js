@@ -1,4 +1,5 @@
 window.onload = function () {
+    this.getMobileOperatingSystem();
     function changeImage() {
         var BackgroundImg = ["36630.jpg", "42079.jpg", "808516.jpg", "842599.jpg"];
         var i = Math.floor((Math.random() * 4));
@@ -112,3 +113,26 @@ function animeList() {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.send(data);
 }
+/**
+ * Determine the mobile operating system.
+ * This function either returns 'iOS', 'Android' or 'unknown'
+ *
+ *
+ */
+function getMobileOperatingSystem() {
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+    if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+    {
+      console.log("iOS") ;
+    }
+    else if( userAgent.match( /Android/i ) )
+    {
+  
+      console.log("Android");
+    }
+    else
+    {
+      console.log( 'unknown');
+    }
+  }

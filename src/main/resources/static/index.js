@@ -74,7 +74,6 @@ function animeList() {
             console.log(cardList);
             var j = 1;
             var i = 0;
-            var flag = true;
             var carousel = document.getElementById('carousel_inner_item');
             carousel.innerHTML = '';
             while (i < cardList.length) {
@@ -126,4 +125,4 @@ window.onload=function getMobileOperatingSystem() {
     {
         window.location.href="not_available.html"
     }
-  }
+}
